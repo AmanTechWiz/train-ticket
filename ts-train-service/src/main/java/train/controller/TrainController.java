@@ -55,7 +55,7 @@ public class TrainController {
     }
 
     @CrossOrigin(origins = "*")
-    @GetMapping(value = "/trains/byName/{name}")
+    @PostMapping(value = "/trains/byName/{name}")
     public HttpEntity retrieveByName(@PathVariable String name, @RequestHeader HttpHeaders headers) {
         TrainController.LOGGER.info("[retrieveByName][Retrieve train][TrainTypeName: {}]", name);
         TrainType trainType = trainService.retrieveByName(name, headers);

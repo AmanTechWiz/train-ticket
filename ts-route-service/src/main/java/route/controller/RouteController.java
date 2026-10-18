@@ -19,7 +19,7 @@ import static org.springframework.http.ResponseEntity.ok;
  * @author fdse
  */
 @RestController
-@RequestMapping("/api/v1/routeservice")
+@RequestMapping("/api/v2/routeservice")
 public class RouteController {
     private static final Logger LOGGER = LoggerFactory.getLogger(RouteController.class);
     @Autowired

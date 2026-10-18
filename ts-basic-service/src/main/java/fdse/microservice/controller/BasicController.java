@@ -32,13 +32,6 @@ public class BasicController {
         return "Welcome to [ Basic Service ] !";
     }
 
-    @PostMapping(value = "/basic/travel")
-    public HttpEntity queryForTravel(@RequestBody Travel info, @RequestHeader HttpHeaders headers) {
-        // TravelResult
-        logger.info("[queryForTravel][Query for travel][Travel: {}]", info.toString());
-        return ok(service.queryForTravel(info, headers));
-    }
-
     @PostMapping(value = "/basic/travels")
     public HttpEntity queryForTravels(@RequestBody List<Travel> infos, @RequestHeader HttpHeaders headers) {
         // TravelResult

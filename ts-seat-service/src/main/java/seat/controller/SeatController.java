@@ -51,7 +51,7 @@ public class SeatController {
      * @return HttpEntity
      */
     @CrossOrigin(origins = "*")
-    @PostMapping(value = "/seats/left_tickets")
+    @PostMapping(value = "/seats/remaining_tickets")
     public HttpEntity getLeftTicketOfInterval(@RequestBody Seat seatRequest, @RequestHeader HttpHeaders headers) {
         // int
         SeatController.LOGGER.info("[getLeftTicketOfInterval][Get left ticket of interval][TravelDate: {},TrainNumber: {},SeatType: {}]",seatRequest.getTravelDate(),seatRequest.getTrainNumber(),seatRequest.getSeatType());

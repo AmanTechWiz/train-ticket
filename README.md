@@ -180,3 +180,5 @@ Download: [[PDF](https://cspengxin.github.io/publications/icse18poster-microserv
 
 
 
+
+See CHANGELOG-1.0.md for release notes.
